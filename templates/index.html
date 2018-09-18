@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fraud Detection</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="static/device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/new-age.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <!--<a class="nav-link js-scroll-trigger" href='../templates/workflow.html' action="/report/" method='GET'>-->
+              <form action="/report/" method='GET'>
+                  <!-- <input type="text" name="user_input" /> -->
+                  <input type="submit" class='btn-outline btn btn-xl js-scroll-trigger' value='Find out how we made this'>
+              </form>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">Fraud Detector is a service that will help you identify fraud cases in your event-ticketing service</h1>
+              <!--<a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a> -->
+
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <div class="white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+
+
+                    <!-- This is the form for making a prediction -->
+
+                    <form action="/score/" method='POST'>
+                        <!-- <input type="text" name="user_input" /> -->
+                        <input type="submit" class='btn-outline btn btn-xl js-scroll-trigger' value='Detect some fraud'>
+                    </form>
+
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+      <div class="container">
+        <p>&copy; Fraud Detector 2018. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="static/js/new-age.min.js"></script>
+
+  </body>
+
+</html>

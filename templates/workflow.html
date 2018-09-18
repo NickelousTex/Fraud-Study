@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fraud Detection - App Workflow</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="../static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../static/device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/new-age.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <header class="masthead">
+      <div class="container h-100">
+        <!--  <div class="row h-100"> -->
+          <div class="col-lg-9 my-auto">
+            <div class="mx-auto">
+              <br>
+              <h2 class="mb-5" style='vertical-align: top;'>
+               Overview of development of Fraud Detector
+             </h2>
+
+             <h3>Data processing and cleaning</h3>
+             <h5>
+             <ul>
+             <li>Identified and prioritized important variables</li>
+             <li>22 features selected for initial analysis</li>
+             <li>Processed data for analysis</li>
+             </ul>
+             </h5>
+             <br />
+
+             <h3>Model selection</h3>
+             <h5>
+             <ul>
+             <li>Process:</li>
+              <ul>
+                <li>out-of-box-model</li>
+                <li>cross-validated gridsearch</li>
+                <li>assessment of model using recall</li>
+              </ul>
+            <li>Models tested: SVM, Logistic, GrandientBoostedClassifier, RandomForest, AdaBoost</li>
+            <li><b>Winner:</b> GradientBoostedClassifier with 67% recall</li>
+            </ul>
+          </h5>
+          <br />
+
+          <h3>Deployment</h3>
+          <h5>
+          <ul>
+            <li>Flask framework used to tie python model with web</li>
+            <li>Bootstrap HTML/CSS layout used for visualization</li>
+            <li>MongoDB stored on an AWS EC2 instance</li>
+            <li>Data pulled in "real-time" through API</li>
+            <li>Dashboard shows latest probability</li>
+          </ul>
+          </h5>
+          <br />
+
+          <h3>Future Work</h3>
+          <h5>
+          <ul>
+            <li>Further process data and test features</li>
+            <li>Additional optimization of model to increase recall</li>
+            <li>Improve dashboard to show additional recent event cases</li>
+          </ul>
+          </h5>
+          <br />
+
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+
+              <div class="white">
+                <div class="device">
+                  <div class="screen">
+
+
+
+                  </div>
+                  <div class="button">
+
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+    </header>
+
+    <footer>
+      <div class="container">
+        <p>&copy; Fraud Detector 2018. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="static/js/new-age.min.js"></script>
+
+  </body>
+
+</html>
